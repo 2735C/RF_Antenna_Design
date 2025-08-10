@@ -88,7 +88,6 @@
 
 ### **(1) Helical Antenna characteristic analysis**
 
-____
 
 
 **□ Helical Antenna 설계**
@@ -129,7 +128,7 @@ ____
 
 ### **(2) Integration of _Parallel Refractive Index_ as a custom CST optimization variable**
 
-____
+
 
 
 
@@ -215,11 +214,12 @@ ____
 
 - 이렇게 만들어진 VBA 코드는 안테나 설계 시 중요한 평가 지표인 N_parallel 및 Directivity 출력 자동화 작업에 활용이 된다.
 
+##
+
 
 ### **(3) Antenna performance improvement results**
 
-##
-____
+
 
 **(1) Combline Antenna**
 
