@@ -89,13 +89,25 @@
 **(1) Integration of _Parallel Refractive Index_ as a custom CST optimization variable**
 
 □ **N_parallel 및 Directivity 출력 VBA 코드 개발**
-1. VBA 코드 개발의 필요성 <br>
-1.1. 해당 정보를 출력하기 위한 기존의 과정은 3개의 플랫폼을 거쳐야 했다.<br>
-1.2. CST Studio에서 E-field 정보를 txt 형태로 추출하고, 그 자료에서 문자 정보를 수작업으로 제거해야 파이썬 코드를 통해 Peak N_parallel과 Directivity 값을 구할 수 있었다.<br>
-1.3. CST에서 한 번 시뮬레이션을 돌릴 때마다 N_parallel 및 Directivity 결과를 확인하기 위해서는 위의 과정을 반복해야 하는 번거로움이 있었기에 과정을 단축하고자 VBA 코드를 작성했다. <br>
+**1. VBA 코드 개발의 필요성** <br>
+- 해당 정보를 출력하기 위한 기존의 과정은 3개의 플랫폼을 거쳐야 했다.<br>
+- CST Studio에서 E-field 정보를 txt 형태로 추출하고, 그 자료에서 문자 정보를 수작업으로 제거해야 파이썬 코드를 통해 Peak N_parallel과 Directivity 값을 구할 수 있었다.<br>
+- CST에서 한 번 시뮬레이션을 돌릴 때마다 N_parallel 및 Directivity 결과를 확인하기 위해서는 위의 과정을 반복해야 하는 번거로움이 있었기에 과정을 단축하고자 VBA 코드를 작성했다. <br>
 
 |<img src="/History/img/img1.png" width="1000" >|
 --|
-|<div align = "middel"> <기존의 N_parallel 및 Directivity 출력 과정 흐름도>|
+|<div align = "middle"> **<기존의 N_parallel 및 Directivity 출력 과정 흐름도>**|
+
+
+**2. VBA 코드 제작**
+- E-field의 정보를 가져오는 코드는 다음과 같이 표현할 수 있다. 해당 코드에 나온 주소는 CST 내부 Navigation Tree의 Tables에 속한 1D Results에서 필요한 E-field 자료의 이름을 작성하면 된다. 
+
+```VBA
+ ' E-Field data extraction
+    Set dataY = ResultTree.GetResultFromTreeItem("Tables\1D Results\curve1_e-field (f=0.476) (1)", "3D:RunID:0")
+```
+
+
+
 
 (2)
