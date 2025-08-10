@@ -135,13 +135,13 @@
 - 파일을 수동으로 선택하는 방식이던 기존 파이썬 코드를 수정하여 위의 VBA 코드에서 설정한 txt 주소에서 정보를 불러오도록 고정한다. 
 - 코드를 아래와 같이 수정함으로써 사람의 개입을 줄이고 자동화 작업을 만들 수 있다. 
 
-|<img src="/History/img/img1.png" width="1000" >|
-|수정 :arrow_down: |
-|<img src="/History/img/img2.png" width="1000" >|
+|<img src="/History/img/code1.png" width="1000" >|
+|<div align = "middle"> 수정 :arrow_down: |
+|<img src="/History/img/code2.png" width="1000" >|
 
-|<img src="/History/img/img3.png" width="1000" >|
-|수정 :arrow_down: |
-|<img src="/History/img/img4.png" width="1000" >|
+|<img src="/History/img/code3.png" width="1000" >|
+|<div align = "middle"> 수정 :arrow_down: |
+|<img src="/History/img/code4.png" width="1000" >|
 
 
 (2)
