@@ -101,7 +101,7 @@
 - 기존 KFE Reference 자료에서는 인접한 Helical Line의 전류원 사이의 위상차를 90º로 설계하였음.
 - 위상차를 90º로 설계하기 위해서 Helical Line의 한 주기의 길이를 5/4파장(790mm)로 설계하였음.
 
-$n_{ll} = c \frac{k_{ll}}{\omega} \approx \frac{\Delta \phi}{D} \times \frac{c}{2 \pi f}$            (1)
+&nbsp;&nbsp;&nbsp; $n_{ll} = c \frac{k_{ll}}{\omega} \approx \frac{\Delta \phi}{D} \times \frac{c}{2 \pi f}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)
 
 - 안테나에서 방사된 파의 Parallel Refractive Index nll​ 은 식 (1)로 표현될 수 있으며, D=52mm는 KSTAR 헬리콘 전류 구동에 최적의 값 nll = 3을 만족하도록 결정됨.
 **[KWU (step2)]**
