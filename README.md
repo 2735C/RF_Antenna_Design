@@ -114,13 +114,12 @@
 |   **<KFE reference>**  | **<KWU>** |
 
 
-----
 
 **[KFE reference & KWU (step3)]**
 - 기계적 강성을 강화하기 위해 각 Helical Line의 중간 지점에서 연결하는 구조가 도입 됨.
 - GND와 Helical Line을 연결하며, 길이가 1/4 파장으로 설계함으로써 열린 효과를 얻을 수 있음.
 
-- **[KFE reference & KWU (step4)]**
+**[KFE reference & KWU (step4)]**
 - 공간 제약을 고려하여 안테나의 크기를 600 mm × 361 mm로 축소하고, Faraday Shield를 추가하여 fast wave 성분의 E-field 방사를 촉진하였음.
 
 ### **(2) Integration of _Parallel Refractive Index_ as a custom CST optimization variable**
