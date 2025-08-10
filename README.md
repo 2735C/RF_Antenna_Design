@@ -13,8 +13,7 @@
 ## 🖊️Role
 
 ### :wolf: 정은지
-- Team leader<br>
-
+**Team leader**<br>
 **[HW]**
 - Helical Antenna characteristic analysis <br>
 
@@ -63,21 +62,21 @@
 - 기존의 자기 유도 전류 구동 방식은 주로 펄스형 운전에 제한되는 반면, RF 전류 구동 방식은 연속 운전(steady-state operation)이 가능하여 차세대 핵융합로의 지속 가능한 운영을 목표로 한다. <br> 특히 헬리콘 전파를 이용하는 HCD는 400~500 MHz 대역에서 높은 효율로 전류를 구동하는 기술로, LHCD를 보완하거나 대체할 가능성으로 주목받고 있다.
 
 
-**연구 목적**
+**3. 연구 목적**
 
 - 본 연구에서는 “핵융합 플라즈마 가열 및 전류 구동용 RF 안테나”라는 주제로 Parallel Refractive Index 개념을 바탕으로 하여 CST Simulation 기반으로 Combline Antenna, Helical Antenna를 활용해서 기존 안테나의 성능을 분석 및 성능 향상을 목표로 하여 설계를 하고자 한다.
 
-**기대 효과**
+**4. 기대 효과**
 
 - 두 가지 형태(Combline, Helical)의 핵융합 발전을 위한 고효율 플라즈마 가열 안테나 설계를 진행하며 어느 유형의 안테나가 플라즈마 가열 안테나에 더 적합한지 비교 분석이 가능할 것이라 기대된다. <br>또한, 플라즈마 가열이라는 새로운 분야에서의 안테나의 활용도 및 기술의 성장을 예측할 수 있다.
 
-## 🗓️개발 일정 2024.09.05 ~ 2024.12.16
+## 🗓️개발 일정 2024.07.26 ~ 2024.12.16
 
 ### <개발 순서>
 
 1. 관련 논문 분석                
 2. 기존 안테나 특성 분석
-- Reconstruction of the existing antenna model in CST and analysis of parameter-dependent characteristics    
+[Reconstruction of the existing antenna model in CST and analysis of parameter-dependent characteristics]
 3. Parallel Refractive Index 계산을 위한 파이썬 코드 분석            
 4. Combline/Helical Antenna model 성능 개선
 5. CST 내장 변수에 없던 Parallel Refractive Index를 최적화 변수로 구현 및 자동화      
@@ -87,49 +86,4 @@
 > 더 많은 내용을 확인하고 싶으면 --> [[보고서]](/result/오성욱교수님_캡스톤설계2_2팀_최종%20보고서.pdf)
 
 
-🔥🔥🔥🔥 디버깅 과정은 Trouble 슈팅 칸 만들거니까 개발 과정에는 결론만 적어주셈 🔥🔥🔥🔥
-
-## (1) Fixed point modeling
-
-### 
-
-Fixed, float 개념부터 foarmat 관련 이야기랑 matlab 시행착오 등등 적으면 될 듯
-
-## (2) RTL Simulation
-
-### Butterfly Calculation
-
-#### step 0
-step마다 각각 twiddle factor가 다르니까 format이랑 연산 방법 등에 대해 소개하던가 코드 부분 발췌해서 설명하던가(허수 실수 교차 되는 거 등등)
-
-#### step 1
-솰라솰라
-
-#### step 2
-솰라솰라
-### CBFP
-솰라솰라
-
-### 시뮬 사진 
-아무 생각이 없다
-
-## (3) Synthesis
-
-합성 결과 사진 첨부 이건 제가 파일 zip 해제 안 해도 돼서 제가 넣을게요
-
-
-## (4) Gate Simulation
-
-### Testbench Code 핵심 첨부 및 설명
-솰라솰라
-
-
-### 시뮬 사진
-
-이미지 
-
-## (5) FPGA Targeting
-
-### Vivado
-
-vio 연결 설정이랑 xdc 설정 관해서 언급 및 사진, 결과 적기 
+(1)

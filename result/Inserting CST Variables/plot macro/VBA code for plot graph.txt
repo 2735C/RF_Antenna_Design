@@ -1,0 +1,55 @@
+Option Explicit
+
+Sub Main()
+    Dim dataY As Variant
+    Dim index As Integer
+    Dim totalPoints As Integer
+
+
+    ' E-Field data extraction
+    Set dataY = ResultTree.GetResultFromTreeItem("Tables\1D Results\curve1_e-field (f=0.476) (1)", "3D:RunID:0")
+
+    ' Total number of data points
+    totalPoints = dataY.GetN()
+
+    ' Initialize real part, imaginary part, length array
+    Dim Re_Vm() As Double
+    Dim Im_Vm() As Double
+    Dim Length_mm() As Double
+
+    ReDim Re_Vm(totalPoints - 1)
+    ReDim Im_Vm(totalPoints - 1)
+    ReDim Length_mm(totalPoints - 1)
+
+    ' File storage path
+    Dim filePath As String
+    filePath = "\\tsclient\D\N_parallel\output.txt"
+    Dim fileNum As Integer
+    fileNum = FreeFile()
+
+    Open filePath For Output As #fileNum
+
+    ' Save To data file (save only numeric values ??separated by tabs)
+    For index = 0 To totalPoints - 1
+        Re_Vm(index) = dataY.GetYRe(index)
+        Im_Vm(index) = dataY.GetYIm(index)
+        Length_mm(index) = dataY.GetX(index)
+
+        ' Save data format as “length, real part, imaginary part”
+        Print #fileNum, Length_mm(index) & vbTab & Re_Vm(index) & vbTab & Im_Vm(index)
+    Next index
+
+
+    ' Close file
+    Close #fileNum
+
+    ' Python Address settings
+    Dim scriptPath As String
+    scriptPath = "\\tsclient\D\N_parallel_Sinlge_data_20241105.py"
+
+    ' Python execution
+    Dim result As Double
+    result = Shell("python """ & scriptPath & """", vbNormalFocus)
+
+
+End Sub

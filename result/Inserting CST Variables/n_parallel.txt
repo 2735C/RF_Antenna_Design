@@ -1,0 +1,65 @@
+Sub Main
+    Dim dataY As Variant
+    Dim index As Integer
+    Dim totalPoints As Integer
+    Dim scriptPath As String
+    Dim resultFile As String
+    Dim Output As String
+    Dim fileNumber As Integer
+    Dim result As Double
+
+    ' Extract E-Field data from result tree
+    Set dataY = ResultTree.GetResultFromTreeItem("Tables\1D Results\curve5_e-field (f=476) (1)", "3D:RunID:0")
+
+    ' Get total number of data points
+    totalPoints = dataY.GetN()
+
+    ' Initialize arrays for real part, imaginary part, and length
+    Dim Re_Vm() As Double
+    Dim Im_Vm() As Double
+    Dim Length_mm() As Double
+
+    ReDim Re_Vm(totalPoints - 1)
+    ReDim Im_Vm(totalPoints - 1)
+    ReDim Length_mm(totalPoints - 1)
+
+    ' File path for saving data
+    Dim filePath As String
+    filePath = "D:\eunjijung\mail_for_Empire\KW_N_parallel_data\test.txt"
+    Dim fileNum As Integer
+    fileNum = FreeFile()
+
+    ' Save data to file (numeric values separated by tabs)
+    Open filePath For Output As #fileNum
+
+    For index = 0 To totalPoints - 1
+        Re_Vm(index) = dataY.GetYRe(index)
+        Im_Vm(index) = dataY.GetYIm(index)
+        Length_mm(index) = dataY.GetX(index)
+
+        ' Save data in format: length, real part, imaginary part
+        Print #fileNum, Length_mm(index) & vbTab & Re_Vm(index) & vbTab & Im_Vm(index)
+    Next index
+    Close #fileNum
+
+    ' Path to Python script
+    scriptPath = "D:\eunjijung\mail_for_Empire\KW_N_parallel_data\N_parallel_Sinlge_data_result_template.py"
+
+    ' Path to output file
+    resultFile = "D:\eunjijung\mail_for_Empire\n_parallel.txt"
+
+    ' Execute Python script
+    Shell "python """ & scriptPath & """", vbNormalFocus
+    
+    ' Open the output file and read the result
+    fileNumber = FreeFile
+    Open resultFile For Input As fileNumber
+    Line Input #fileNumber, Output  ' Read the first line from the file
+    Close fileNumber
+
+    ' Convert the output to a Double and store in result
+    result = CDbl(Output)
+
+  StoreGlobalDataValue("EVALUATE0DRETURN", result) ' use this to return a value to the template
+
+End Sub
