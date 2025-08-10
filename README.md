@@ -164,11 +164,9 @@
 - 상기 언급된 VBA 코드를 사용하여, 패러데이 쉴드가 포함되지 않은 안테나의 경우 1분 이내, 쉴드가 포함된 경우 2-3분 내에 Peak N_parallel과 Directivity 값을 구할 수 있다.
 - VBA Macro가 작동하는 동안 다른 Macro 선택지들의 비활성화를 확인함으로써 선택한 Macro가 동작하고 있음을 알 수 있다.
 
-|<img src="/History/img/img2.png" width="1000" >|
---|
-|<div align = "middle"> **<VBA Macro 실행 화면>**|
-|<img src="/History/img/img3.png" width="1000" >|
-|<div align = "middle"> **<VBA Macro 실행 결과>**|
+|<img src="/History/img/img2.png" width="1000" >|<img src="/History/img/img3.png" width="1000" >|
+--|--
+|<div align = "middle"> **<VBA Macro 실행 화면>**|<div align = "middle"> **<VBA Macro 실행 결과>**|
 
 - 이렇게 만들어진 VBA 코드는 안테나 설계 시 중요한 평가 지표인 N_parallel 및 Directivity 출력 자동화 작업에 활용이 된다.
 
