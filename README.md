@@ -107,7 +107,41 @@
     Set dataY = ResultTree.GetResultFromTreeItem("Tables\1D Results\curve1_e-field (f=0.476) (1)", "3D:RunID:0")
 ```
 
+- E-field 정보를 저장할 txt의 위치와 이름을 설정한다. 경로는 본인 PC에 맞게 설정해 주면 되며, 해당 주소의 파일이 존재하지 않아도 시뮬레이션을 돌리면 자동 생성된다.
+- 시뮬레이션을 돌릴 때마다 자동으로 덮어쓰기가 되므로 파일을 다른 주소에 새로 저장할 필요가 없어진다. 
 
+```VBA
+ ' File storage path
+ Dim filePath As String
+ filePath = "\\tsclient\D\N_parallel\output.txt"
+ Dim fileNum As Integer
+ fileNum = FreeFile()
+```
+
+- 해당 주소의 txt 파일에 E-field 정보(Length, Re, Im)를 저장하는 코드이다.
+
+```VBA
+ ' Save To data file (save only numeric values separated by tabs)
+  For index = 0 To totalPoints - 1
+     Re_Vm(index) = dataY.GetYRe(index)
+     Im_Vm(index) = dataY.GetYIm(index)
+     Length_mm(index) = dataY.GetX(index)
+
+     ' Save data format as “length, real part, imaginary part”
+     Print #fileNum, Length_mm(index) & vbTab & Re_Vm(index) & vbTab & Im_Vm(index)
+  Next index
+```
+
+- 파일을 수동으로 선택하는 방식이던 기존 파이썬 코드를 수정하여 위의 VBA 코드에서 설정한 txt 주소에서 정보를 불러오도록 고정한다. 
+- 코드를 아래와 같이 수정함으로써 사람의 개입을 줄이고 자동화 작업을 만들 수 있다. 
+
+|<img src="/History/img/img1.png" width="1000" >|
+|수정 :arrow_down: |
+|<img src="/History/img/img2.png" width="1000" >|
+
+|<img src="/History/img/img3.png" width="1000" >|
+|수정 :arrow_down: |
+|<img src="/History/img/img4.png" width="1000" >|
 
 
 (2)
