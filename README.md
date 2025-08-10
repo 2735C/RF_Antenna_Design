@@ -85,7 +85,7 @@
 ## 개발 과정
 > 더 많은 내용을 확인하고 싶으면 --> [[보고서]](/Project/오성욱교수님_캡스톤설계2_2팀_최종%20보고서.pdf)
 
-**(1) Helical Antenna characteristic analysis**
+### **(1) Helical Antenna characteristic analysis**
 
 **□ Helical Antenna 설계**
 
@@ -101,7 +101,7 @@
 - 기존 KFE Reference 자료에서는 인접한 Helical Line의 전류원 사이의 위상차를 90º로 설계하였음.
 - 위상차를 90º로 설계하기 위해서 Helical Line의 한 주기의 길이를 5/4파장(790mm)로 설계하였음.
 
-&nbsp;&nbsp;&nbsp; $n_{ll} = c \frac{k_{ll}}{\omega} \approx \frac{\Delta \phi}{D} \times \frac{c}{2 \pi f}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{ll} = c \frac{k_{ll}}{\omega} \approx \frac{\Delta \phi}{D} \times \frac{c}{2 \pi f}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)
 
 - 안테나에서 방사된 파의 Parallel Refractive Index nll​ 은 식 (1)로 표현될 수 있으며, D=52mm는 KSTAR 헬리콘 전류 구동에 최적의 값 nll = 3을 만족하도록 결정됨.
 **[KWU (step2)]**
@@ -123,7 +123,7 @@
 - **[KFE reference & KWU (step4)]**
 - 공간 제약을 고려하여 안테나의 크기를 600 mm × 361 mm로 축소하고, Faraday Shield를 추가하여 fast wave 성분의 E-field 방사를 촉진하였음.
 
-**(2) Integration of _Parallel Refractive Index_ as a custom CST optimization variable**
+### **(2) Integration of _Parallel Refractive Index_ as a custom CST optimization variable**
 
 □ **N_parallel 및 Directivity 출력 VBA 코드 개발** <br>
 **1. VBA 코드 개발의 필요성** <br>
