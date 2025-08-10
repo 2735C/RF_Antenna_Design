@@ -85,10 +85,11 @@
 ## 개발 과정
 > 더 많은 내용을 확인하고 싶으면 --> [[보고서]](/Project/오성욱교수님_캡스톤설계2_2팀_최종%20보고서.pdf)
 
-____
-
 
 ### **(1) Helical Antenna characteristic analysis**
+
+____
+
 
 **□ Helical Antenna 설계**
 
@@ -127,6 +128,10 @@ ____
 ##
 
 ### **(2) Integration of _Parallel Refractive Index_ as a custom CST optimization variable**
+
+____
+
+
 
 □ **N_parallel 및 Directivity 출력 VBA 코드 개발** <br>
 **1. VBA 코드 개발의 필요성** <br>
@@ -214,6 +219,8 @@ ____
 ##
 
 ### **(3) Antenna performance improvement results**
+
+____
 
 **(1) Combline Antenna**
 
