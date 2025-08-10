@@ -94,10 +94,36 @@
 - 기존 KFE Reference 자료보다 더 많은 turn수로 높은 Directivity값을 얻음
 
 
+**2. 설계 초기 과정**
+**[KFE reference (step2)]**
+- 기존 KFE Reference 자료에서는 인접한 Helical Line의 전류원 사이의 위상차를 90º로 설계하였음.
+- 위상차를 90º로 설계하기 위해서 Helical Line의 한 주기의 길이를 5/4파장(790mm)로 설계하였음.
+
+$n_{ll} = c \frac{k_{ll}}{\omega} \approx \frac{\Delta \phi}{D} \times \frac{c}{2 \pi f}$            (1)
+
+- 안테나에서 방사된 파의 Parallel Refractive Index nll​ 은 식 (1)로 표현될 수 있으며, D=52mm는 KSTAR 헬리콘 전류 구동에 최적의 값 nll = 3을 만족하도록 결정됨.
+**[KWU (step2)]**
+- 인접한 Helical Line의 전류원 사이의 위상차를 60º로 설계하였음.
+- Helical Line의 한 주기의 길이를 7/6파장(735mm)로 설계하였음.     
+
+
+|<img src="/History/img/img4.png" width="500" >|<img src="/History/img/img5.png" width="500" >|
+--|--
+|   **<KFE reference>**  | **<KWU>** |
+
+
+----
+
+**[KFE reference & KWU (step3)]**
+- 기계적 강성을 강화하기 위해 각 Helical Line의 중간 지점에서 연결하는 구조가 도입 됨.
+- GND와 Helical Line을 연결하며, 길이가 1/4 파장으로 설계함으로써 열린 효과를 얻을 수 있음.
+
+- **[KFE reference & KWU (step4)]**
+- 공간 제약을 고려하여 안테나의 크기를 600 mm × 361 mm로 축소하고, Faraday Shield를 추가하여 fast wave 성분의 E-field 방사를 촉진하였음.
 
 **(2) Integration of _Parallel Refractive Index_ as a custom CST optimization variable**
 
-□ **N_parallel 및 Directivity 출력 VBA 코드 개발**
+□ **N_parallel 및 Directivity 출력 VBA 코드 개발** <br>
 **1. VBA 코드 개발의 필요성** <br>
 - 해당 정보를 출력하기 위한 기존의 과정은 3개의 플랫폼을 거쳐야 했다.<br>
 - CST Studio에서 E-field 정보를 txt 형태로 추출하고, 그 자료에서 문자 정보를 수작업으로 제거해야 파이썬 코드를 통해 Peak N_parallel과 Directivity 값을 구할 수 있었다.<br>
