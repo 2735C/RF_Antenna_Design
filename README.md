@@ -10,7 +10,7 @@
 | **정은지** | **유동옥** | **김태민** |
 |:----------:|:----------:|:----------:|
 | Team Leader | Improving Combline <br> Antenna Performance | Improving Helical <br> Antenna Performance |
-| [<img src="/img/profile1.webp" width="150" height="150"><br />@Eunji Jung](mailto:eunjijung1107@gmail.com) | [<img src="/img/profile2.png" width="150" height="150"><br />@유동옥](mailto:avanet9479@kw.ac.kr) | [<img src="/img/profile3.png" width="150" height="150"><br />@김태민](mailto:steve3588@naver.com) |
+| [<img src="/img/profile1.webp" width="200" height="200"><br />@Eunji Jung](mailto:eunjijung1107@gmail.com) | [<img src="/img/profile2.png" width="200" height="200"><br />@유동옥](mailto:avanet9479@kw.ac.kr) | [<img src="/img/profile3.png" width="200" height="200"><br />@김태민](mailto:steve3588@naver.com) |
 
 
 
