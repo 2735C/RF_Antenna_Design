@@ -109,9 +109,8 @@
 - Helical Line의 한 주기의 길이를 7/6파장(735mm)로 설계하였음.     
 
 
-|<img src="/History/img/img4.png" width="500" >|<img src="/History/img/img5.png" width="500" >|
+|<img src="/History/img/img4.png" width="500" > <br> **<KFE reference>**|<img src="/History/img/img5.png" width="500" > <br> **<KWU>** |
 --|--
-|   **<KFE reference>**  | **<KWU>** |
 
 
 
