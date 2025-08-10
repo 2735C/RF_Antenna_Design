@@ -88,7 +88,9 @@
 **(1) Helical Antenna characteristic analysis**
 
 **□ Helical Antenna 설계**
+
 **1. 목표설정**
+
 - S11 < -15dB, S21 >-1dB로 최소한의 반사와 최대의 전송이 이루어지게 S-parameter값 설정
 - nll(Parallel Refractive Index) = 3
 - 기존 KFE Reference 자료보다 더 많은 turn수로 높은 Directivity값을 얻음
