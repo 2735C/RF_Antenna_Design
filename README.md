@@ -14,22 +14,22 @@
 
 ### :wolf: 정은지
 - Team leader
-- [HW]
+**[HW]**
 - Helical Antenna characteristic analysis
-- [SW]
+**[SW]**
 - Integration of _Parallel Refractive Index_ as a custom CST optimization variable
 - Implementation of MATLAB-controlled CST simulations for advanced optimization
 
 
 
 ### :tiger: 유동옥
-- [HW]
+**[HW]**
 - Combline Antenna characteristic analysis
 - Performance improvement of Combline Antenna model
 
 
 ###	:dragon: 김태민
-- [HW]
+**[HW]**
 - Helical Antenna characteristic analysis
 - Performance improvement of Helical Antenna model
 
