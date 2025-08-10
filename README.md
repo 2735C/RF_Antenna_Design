@@ -3,12 +3,15 @@
 
 ## 🙋‍♂️팀원
 
-|                                                 **정은지**                                                 |                                                                                                                             **유동옥**                                                                                                                              |                                                                        **김태민**                                                                     |      
+# :star: TEAM: 캡스톤 설계 2팀  
 
+## 🙋‍♂️팀원
 
-| :--------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------: | 
-|                                                Team Leader                                                 |                                                                                                                            Improving Combline Antenna Performance                                                                                                                        |                                                               Improving   Helical Antenna Performance                                                             |
-| [<img src="/img/profile1.webp" width=150 height=150> </br> @Eunji Jung](mailto:eunjijung1107@gmail.com) | [<img src="/img/profile2.png" width=150 height=150> </br> @유동옥](mailto:avanet9479@kw.ac.kr) | [<img src="/img/profile3.png" width=150 height=150> </br> @김태민](mailto:steve3588@naver.com) |
+| **정은지** | **유동옥** | **김태민** |
+|:----------:|:----------:|:----------:|
+| Team Leader | Improving Combline Antenna Performance | Improving Helical Antenna Performance |
+| [<img src="/img/profile1.webp" width="150" height="150"><br>@Eunji Jung](mailto:eunjijung1107@gmail.com) | [<img src="/img/profile2.png" width="150" height="150"><br>@유동옥](mailto:avanet9479@kw.ac.kr) | [<img src="/img/profile3.png" width="150" height="150"><br>@김태민](mailto:steve3588@naver.com) |
+
 
 
 ## 🖊️Role
