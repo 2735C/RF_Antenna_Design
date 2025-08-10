@@ -136,10 +136,12 @@
 - 코드를 아래와 같이 수정함으로써 사람의 개입을 줄이고 자동화 작업을 만들 수 있다. 
 
 |<img src="/History/img/code1.png" width="1000" >|
+--|
 |<div align = "middle"> 수정 :arrow_down: |
 |<img src="/History/img/code2.png" width="1000" >|
 
 |<img src="/History/img/code3.png" width="1000" >|
+--|
 |<div align = "middle"> 수정 :arrow_down: |
 |<img src="/History/img/code4.png" width="1000" >|
 
