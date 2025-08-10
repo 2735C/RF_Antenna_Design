@@ -92,6 +92,8 @@
 
 **□ Helical Antenna 설계**
 
+##
+
 **1. 목표설정**
 
 - S11 < -15dB, S21 >-1dB로 최소한의 반사와 최대의 전송이 이루어지게 S-parameter값 설정
@@ -129,7 +131,7 @@
 ### **(2) Integration of _Parallel Refractive Index_ as a custom CST optimization variable**
 
 
-
+##
 
 
 □ **N_parallel 및 Directivity 출력 VBA 코드 개발** <br>
@@ -219,7 +221,7 @@
 
 ### **(3) Antenna performance improvement results**
 
-
+##
 
 **(1) Combline Antenna**
 
