@@ -5,7 +5,7 @@
 | **정은지** | **유동옥** | **김태민** |
 |:----------:|:----------:|:----------:|
 | Team Leader | Antenna Performance <br> Improvement Developer | Antenna Performance <br> Improvement Developer |
-| [<img src="/img/profile1.webp" width="250" height="250"><br />@mail](mailto:eunjijung1107@gmail.com) | [<img src="/img/profile2.png" width="250" height="250"><br />@mail](mailto:avanet9479@kw.ac.kr) | [<img src="/img/profile3.png" width="250" height="250"><br />@mail](mailto:steve3588@naver.com) |
+| [<img src="/History/img/profile1.webp" width="250" height="250"><br />@mail](mailto:eunjijung1107@gmail.com) | [<img src="/History/img/profile2.png" width="250" height="250"><br />@mail](mailto:avanet9479@kw.ac.kr) | [<img src="/History/img/profile3.png" width="250" height="250"><br />@mail](mailto:steve3588@naver.com) |
 
 
 
