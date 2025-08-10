@@ -119,7 +119,7 @@
 - GND와 Helical Line을 연결하며, 길이가 1/4 파장으로 설계함으로써 열린 효과를 얻을 수 있음.
 
 **[KFE reference & KWU (step4)]**
-- 공간 제약을 고려하여 안테나의 크기를 600 mm × 361 mm로 축소하고, Faraday Shield를 추가하여 fast wave 성분의 E-field 방사를 촉진하였음.
+- Faraday Shield를 추가하여 fast wave 성분의 E-field 방사를 촉진하였음.
 
 ### **(2) Integration of _Parallel Refractive Index_ as a custom CST optimization variable**
 
@@ -206,3 +206,25 @@
 - 이렇게 만들어진 VBA 코드는 안테나 설계 시 중요한 평가 지표인 N_parallel 및 Directivity 출력 자동화 작업에 활용이 된다.
 
 
+### **(3) Antenna performance improvement results**
+
+**(1) Combline Antenna**
+
+|<img src="/History/img/graph1.png" width="1000" >|
+--|
+
+
+**<Combline Antenna> 결론**
+- KWU가 KFE Reference보다 S-parameter의 값이 목표에서 설정한 값에 맞는 것을 확인할 수 있었음
+- nll 값이 KWU인 경우가 원하는 값인 3에 더 가까운 것을 확인할 수 있었음
+- 향후 Maximum E-field를 낮추고, nll = 3에 더 맞출 수 있도록 설계 개선에 초점을 맞출 예정
+
+**(2) Helical Antenna**
+
+|<img src="/History/img/graph2.png" width="1000" >|
+--|
+
+**<Helical Antenna> 결론**
+- KWU가 KFE reference보다 turn수가 많아 예상대로 높은 Directivity값을 보여주고 있음.
+- -15dB보다 낮은 S11, -1dB보다 높은 S21을 보이고 nll(Parallel Refractive Index) = 3을 만족시켜 설정한 목표를 달성함.
+- 향후 Max E-field를 낮추기 위한 설계 개선에 초점을 맞출 예정.
