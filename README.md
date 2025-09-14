@@ -4,7 +4,7 @@
 
 > #### 해당 Readme 파일을 통해 참고 가능한 내용: 
 
->  1. VBA 언어를 사용해 CST - python 연동 방법(최적화 변수 추가 가능)
+>  1. VBA 언어를 사용해 CST - python 연동 방법(최적화 변수 추가 가능) :arrow_right: [[바로가기]](https://github.com/2735C/Private.RF_Antenna_Design/blob/main/Project/Inserting%20CST%20Variables/Result%20template.pdf)
 >  2. Matlab - CST 연동 방법(Matlab Algorithm으로 원격 최적화 가능) :arrow_right: [[바로가기]](https://github.com/2735C/Private.RF_Antenna_Design/blob/main/Project/CST-MATLAB_Optimization/Matlab.pdf)
 
 
@@ -83,11 +83,11 @@
 
 ## 개발 과정
 
-##
+
 
 ### **(1) Helical Antenna characteristic analysis**
 
-##
+
 
 **□ Helical Antenna 설계**
 
@@ -129,7 +129,7 @@
 ### **(2) Integration of _Parallel Refractive Index_ as a custom CST optimization variable**
 
 
-##
+
 
 
 □ **N_parallel 및 Directivity 출력 VBA 코드 개발** <br>
