@@ -1,21 +1,18 @@
 # :star: TEAM: 캡스톤 설계 2팀  
 
-## 🙋‍♂️팀원
-
-| **정은지** | **유동옥** | **김태민** |
-|:----------:|:----------:|:----------:|
-| Team Leader | Antenna Performance <br> Improvement Developer | Antenna Performance <br> Improvement Developer |
-| [<img src="/History/img/profile1.webp" width="250" height="250"><br />@mail](mailto:eunjijung1107@gmail.com) | [<img src="/History/img/profile2.png" width="250" height="250"><br />@mail](mailto:avanet9479@kw.ac.kr) | [<img src="/History/img/profile3.png" width="250" height="250"><br />@mail](mailto:steve3588@naver.com) |
+> ### 보안 상의 이유로 안테나 연구의 구체적인 자료와 정보는 생략하였습니다.
+> ### 해당 Readme 파일을 통해 참고 가능한 내용: 
+> #### 1. VBA 언어를 사용해 CST - python 연동 방법(최적화 변수 추가 가능)
+> #### 2. Matlab - CST 연동 방법(Matlab Algorithm으로 원격 최적화 가능)
 
 
-
-
-## 🖊️Role
+## 🖊️팀원 & Role
 
 ### :wolf: 정은지
 **Team leader**<br>
 **[HW]**
 - Helical Antenna characteristic analysis <br>
+- Performance improvement of Helical Antenna model
 
 **[SW]** 
 - Integration of _Parallel Refractive Index_ as a custom CST optimization variable
@@ -29,7 +26,7 @@
 - Performance improvement of Combline Antenna model
 
 
-###	:dragon: 김태민
+### :dragon: 김태민
 **[HW]**
 - Helical Antenna characteristic analysis
 - Performance improvement of Helical Antenna model
@@ -83,8 +80,6 @@
 6. MATLAB에서 CST 시뮬레이션을 원격 제어하여 다양한 최적화 알고리즘 적용 환경 마련   
 
 ## 개발 과정
-> 더 많은 내용을 확인하고 싶으면 --> [[보고서]](/Project/오성욱교수님_캡스톤설계2_2팀_최종%20보고서.pdf)
-
 
 ##
 
@@ -105,14 +100,14 @@
 **2. 설계 초기 과정**
 **[KFE reference (step2)]**
 - 기존 KFE Reference 자료에서는 인접한 Helical Line의 전류원 사이의 위상차를 90º로 설계하였음.
-- 위상차를 90º로 설계하기 위해서 Helical Line의 한 주기의 길이를 5/4파장(790mm)로 설계하였음.
+- 위상차를 90º로 설계하기 위해서 Helical Line의 한 주기의 길이를 5/4파장로 설계하였음.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n_{ll} = c \frac{k_{ll}}{\omega} \approx \frac{\Delta \phi}{D} \times \frac{c}{2 \pi f}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)
 
 - 안테나에서 방사된 파의 Parallel Refractive Index nll​ 은 식 (1)로 표현될 수 있으며, D=52mm는 KSTAR 헬리콘 전류 구동에 최적의 값 nll = 3을 만족하도록 결정됨.
 **[KWU (step2)]**
 - 인접한 Helical Line의 전류원 사이의 위상차를 60º로 설계하였음.
-- Helical Line의 한 주기의 길이를 7/6파장(735mm)로 설계하였음.     
+- Helical Line의 한 주기의 길이를 7/6파장으로 설계하였음.     
 
 
 |<img src="/History/img/img4.png" width="500" > <br> **<KFE reference>**|<img src="/History/img/img5.png" width="500" > <br> **<KWU>** |
@@ -244,3 +239,13 @@
 - KWU가 KFE reference보다 turn수가 많아 예상대로 높은 Directivity값을 보여주고 있음.
 - -15dB보다 낮은 S11, -1dB보다 높은 S21을 보이고 nll(Parallel Refractive Index) = 3을 만족시켜 설정한 목표를 달성함.
 - 향후 Max E-field를 낮추기 위한 설계 개선에 초점을 맞출 예정.
+
+##
+
+
+### 참고문헌
+
+1. H. H. Wi, S. J. Wang, J. Kim, and J. G. Kwak, "RF design of helical long-wire traveling wave antenna for helicon current drive in KSTAR," Fusion Engineering and Design, vol. 195, no. 113983, 2023.
+2. H. H. Wi, S. J. Wang, H. J. Kim, and J. G. Kwak, "Design and RF test of a prototype traveling wave antenna for helicon current drive in KSTAR," Fusion Engineering and Design, vol. 126, pp. 67–72, 2018.
+3. K. H. Jang, S. J. Wang, H. H. Wi, K. Saito, J. H. Kim, H. Y. Lee, and J. G. Kwak, "Design of multipactor-suppressed high-power VFT for helicon current drive in KSTAR," Fusion Engineering and Design, vol. 161, no. 111960, 2020.
+4. S. J. Wang, H. H. Wi, H. J. Kim, J. Kim, J. H. Jeong, and J. G. Kwak, "Helicon wave coupling in KSTAR plasmas for off-axis current drive in high electron pressure plasmas," Nuclear Fusion, vol. 57, no. 4, p. 046010, Feb. 2017, doi: 10.1088/1741-4326/aa5b42.
